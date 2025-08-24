@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+document.addEventListener("contextmenu", e => e.preventDefault(), false);
+</script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+document.onkeydown = function(e) {
+        if (e.ctrlKey && 
+            (e.keyCode === 67 || 
+             e.keyCode === 86 || 
+             e.keyCode === 85 || 
+             e.keyCode === 117)) {
+            return false;
+        } else {
+            return true;
+        }
+};
+$(document).keypress("u",function(e) {
+  if(e.ctrlKey)
+  {
+return false;
+}
+else
+{
+return true;
+}
+});
+</script>
+</head>
+<body  class="bg-gray-50 text-gray-900">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-md fixed w-full z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold">Your Name</h1>
+      <nav>
+        <ul class="flex gap-6">
+          <li><a href="#about" class="hover:text-blue-600">About</a></li>
+          <li><a href="#projects" class="hover:text-blue-600">Projects</a></li>
+          <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="h-screen flex flex-col justify-center items-center text-center px-6" id="home">
+    <h2 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm <span class="text-blue-600">Your Name</span></h2>
+    <p class="text-lg md:text-xl max-w-2xl mb-6">A passionate <b>developer</b> building modern and user-friendly applications.</p>
+    <a href="#projects" class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700">View My Work</a>
+  </section>
+
+  <!-- About Section -->
+  <section class="py-20 bg-gray-100" id="about">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold mb-6">About Me</h3>
+      <p class="text-lg max-w-3xl mx-auto">I’m a software developer with expertise in <span class="font-semibold">Python, JavaScript, AI, and Web Development</span>. I enjoy solving problems and creating applications that make life easier.</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="py-20" id="projects">
+    <div class="max-w-6xl mx-auto px-6">
+      <h3 class="text-3xl font-bold text-center mb-12">Projects</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <!-- Project Card -->
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-3">Project One</h4>
+          <p class="text-gray-600 mb-4">A short description of the project and what technologies you used.</p>
+          <a href="#" class="text-blue-600 font-medium hover:underline">View Project →</a>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-3">Project Two</h4>
+          <p class="text-gray-600 mb-4">Another project description. Show off your best work here.</p>
+          <a href="#" class="text-blue-600 font-medium hover:underline">View Project →</a>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-3">Project Three</h4>
+          <p class="text-gray-600 mb-4">Brief info about the project and how it helped solve a problem.</p>
+          <a href="#" class="text-blue-600 font-medium hover:underline">View Project →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-20 bg-gray-100" id="contact">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold mb-6">Contact Me</h3>
+      <p class="text-lg mb-6">Feel free to reach out for collaborations or just a friendly hello 👋</p>
+      <a href="mailto:your@email.com" 
+         class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700">
+         Say Hello
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 bg-white shadow-inner text-center">
+    <p class="text-gray-600">© 2025 Your Name. Built with ❤️</p>
+  </footer>
+
+</body>
+</html>
